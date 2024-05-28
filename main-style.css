@@ -306,6 +306,12 @@ button.btn-contact{
   row-gap: 1rem;
   padding-right: 4rem;
 }
+.center-space2 ul a{
+  color: white;
+}
+.center-space2 ul a:hover{
+  color: var(--btn-color);
+}
 .right-icons{
   gap: 2rem;
 }
