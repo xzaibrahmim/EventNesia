@@ -6,57 +6,53 @@
   --color-side: #352e35;
 
   --btn-color: #ff7e00;
- 
 }
 
-*{
+* {
   text-decoration: none !important;
 }
 
 body {
   font-family: "Inter", sans-serif;
-  height: 5000px;
 }
 
-section {
-  height: 93vh;
-}
-section.section2{
-  height: 200vh;
+section.section {
+  height: auto;
   background: #f196e5;
 }
+
 /* =================== BG ABSOLUTE =================== */
-.bg{
+.bg {
   padding: 7rem 0 2rem 0;
   display: grid;
-  grid-template-columns: repeat(12,1fr);
-  grid-template-rows: repeat(6,1fr);
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: repeat(6, 1fr);
   width: 100%;
   height: 90vh;
   position: absolute;
 }
-.bg img{
+.bg img {
   width: 8rem;
   height: auto;
 }
 
-.bg img:nth-child(1){
+.bg img:nth-child(1) {
   grid-area: 1/2;
   width: 7rem;
 }
-.bg img:nth-child(2){
+.bg img:nth-child(2) {
   grid-area: 1/9;
   width: 5rem;
 }
-.bg img:nth-child(4){
+.bg img:nth-child(4) {
   grid-area: 5/2;
   width: 9.5rem;
 }
-.bg img:nth-child(5){
+.bg img:nth-child(5) {
   grid-area: 5/11;
   width: 6.8rem;
 }
-.bg img:nth-child(3){
+.bg img:nth-child(3) {
   grid-area: 2/12;
   width: 6rem;
 }
@@ -102,13 +98,13 @@ svg.svg-arrow {
   background: #000000 !important;
   backdrop-filter: blur(90) !important;
 }
-/* ==================z= STYLE-HERO ===================*/
+/* ==================== STYLE-HERO ===================*/
 
 section.hero {
   background: #f7cb46;
 }
 
-.hero-style{
+.hero-style {
   display: flex;
   height: 100vh;
   gap: 8px;
@@ -117,7 +113,7 @@ section.hero {
   align-items: center;
 }
 
-.hero .title span{
+.hero .title span {
   font-family: "Poppins", sans-serif;
   font-size: 55px;
   font-weight: 800;
@@ -125,7 +121,7 @@ section.hero {
   text-shadow: 2px 6px 5.5px rgba(0, 0, 0, 0.25);
 }
 
-a.font-btn-main{
+a.font-btn-main {
   font-size: 1rem;
   padding: 0.5rem 0.6rem;
   position: relative;
@@ -133,106 +129,211 @@ a.font-btn-main{
   font-family: "Montserrat", sans-serif;
 }
 
-.hero .subtitle-hero span{
+.hero .subtitle-hero span {
   font-weight: 600;
   font-family: "Inter", sans-serif;
 }
 
-.btn:hover{
+.btn:hover {
   transition: all 150ms ease-in;
   transform: scale(1.04);
   background: var(--bs-btn-border-hover-color);
 }
 
-.btn{
+.btn {
   transition: all 150ms ease-out;
-  box-shadow: 0px 10px 4px 0px rgba(0, 0, 0, 0.25), 0px 9px 4px 0px rgba(0, 0, 0, 0.25) inset;
+  box-shadow: 0px 10px 4px 0px rgba(0, 0, 0, 0.25),
+    0px 9px 4px 0px rgba(0, 0, 0, 0.25) inset;
   background: var(--btn-color);
   border: 3px solid var(--color-side);
   --bs-btn-hover-border-color: 0;
   --bs-btn-border-hover-color: #ff7e00;
 }
 
-.btn a.font-btn-main{
+.btn a.font-btn-main {
   font-weight: 700;
   color: var(--color-side);
 }
 
 /* =================== STYLE-WAVE ===================*/
-.font-black{
+.font-black {
   color: #000;
 }
 
-img.wave{
+img.wave {
   align-items: center;
   object-position: center;
-  bottom: 4rem;
+  bottom: 5rem;
   position: relative;
   width: 100%;
   height: 15vh;
 }
 
 /* =================== STYLE-SECTION2 ===================*/
-.bg2{
+.bg2 {
   position: absolute;
   display: grid;
   width: auto;
   height: 50vh;
-  grid-template-columns: repeat(5,1fr);
-  grid-template-rows: repeat(6,1fr);
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(6, 1fr);
 }
 
-.bg2 img{
+.bg2 img {
   width: 6rem;
 }
 
-.bg2 img:nth-child(1){
+.bg2 img:nth-child(1) {
   width: 9rem;
   grid-area: 1/1;
 }
-.bg2 img:nth-child(2){
+.bg2 img:nth-child(2) {
   width: 6rem;
   grid-area: 2/1;
 }
-.bg2 img:nth-child(3){
+.bg2 img:nth-child(3) {
   width: rem;
   grid-area: 1/5;
 }
-.bg2 img:nth-child(4){
+.bg2 img:nth-child(4) {
   width: 10rem;
   grid-area: 2/5;
 }
 
-.title span.font-black{
-  font-size: 3.4rem;
+.title span.font-black {
+  font-size: 4rem;
 }
 
-.section-event-unggulan{
+.section-event-unggulan {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 
-.left-section-event-unggulan{
-  /* width: 45%; */
-}
-.description{
+.description {
   line-height: 28px;
   font-weight: 500;
-}
-
-.right-section-event-unggulan{
-  /* width: 50%; */
 }
 
 img.main-maskot-3d {
   width: 100%;
 }
+/* ================ STYLE-SECTION3 ================ */
 
+.main-Explore-about {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  padding: 3rem 0 9rem 0;
+  background: #f196e5;  
+}
+
+
+.title-center span {
+  color: #000;
+  font-family: "Montserrat", sans-serif;
+}
+
+.card-body{
+  display: flex;
+  gap: 2rem;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.card {
+  height: auto;
+  border-radius: 16px;
+}
+
+.card-style {
+  border: 2px solid #000;
+  border-bottom: 8px solid #000;
+  background: #fdf7e1;
+}
+
+.left-card {
+  width: 100%;
+  height: auto;
+  display: flex;
+}
+
+.right-card{
+  width: 100%;
+}
+.title-in-card span{
+  color: #000;
+  font-size: 3.3rem;
+}
+
+.card-body .dua {
+  background: #f7cb46;
+  width: 100%;
+  height: 100%;
+  border-radius: 16px;
+  box-shadow: 17px 23px 11.1px 0px rgba(0, 0, 0, 0.25) inset;
+}
+.card-body .visi {
+  width: 19rem;
+}
+
+mg.wave:nth-child(2){
+  bottom: 3rem;
+}
+/* ================== FOOTER ================= */
+footer{
+  height: 90vh;
+  background: #000;
+}
+
+.subtext{
+  color: #D6D6D6;
+}
+button.btn-contact{
+  color: #352E35;
+  border: 1px solid #352E35;
+  border-radius: 12px;
+  box-shadow: 0px 12px 4px 0px rgba(0, 0, 0, 0.25), 0px 9px 4px 0px rgba(0, 0, 0, 0.25) inset;
+}
+
+.title span.footer{
+  color: #CECECE;
+}
+.center-space2{
+  gap: 3rem;
+  row-gap: 1rem;
+  padding-right: 4rem;
+}
+.right-icons{
+  gap: 2rem;
+}
+
+.space-contact2{
+  justify-content: space-between;
+  align-items: end;
+  border-bottom: 2px solid #484848;
+  margin: 4rem 0 1.2rem 0;
+  padding: 2rem 0;
+}
+
+.space-copyright3{
+  font-family: Inter;
+}
 /* ================ MEDIA QUERY ================ */
 
-@media (max-width: 992px){
-  .section-event-unggulan{
+@media (max-width: 992px) {
+  .section-event-unggulan {
     flex-direction: column-reverse !important;
+  }
+  .card-body {
+    flex-direction: column;
+  }
+  .space-contact2{
+    flex-direction: column;
+    row-gap: 2.7rem;
+    align-items: start;
+    margin: 1rem 0 1.2rem 0;
   }
 }
