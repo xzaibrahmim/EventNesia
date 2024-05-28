@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="main-style.css">
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <!-- --------------------------------------- -->
+    <title>coba sass</title>
+</head>
+
+<body>
+    <div class="bg">
+        <img class="1" src="icons/Asset 5@2x.png" alt="">
+        <img class="2" src="icons/Asset 2@3x.png" alt="">
+        <img class="3" src="icons/Asset 2@2x.png" alt="">
+        <img class="4" src="icons/Asset 6@2x.png" alt="">
+        <img class="5" src="icons/Asset 3@2x.png" alt="">
+    </div>
+    <nav class="navbar navbar-expand-lg bg-black navbar-dark p-3 fixed-top">
+        <div class="container">
+            <a class="navbar-brand fs-4" href="#">EventNesia</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item px-3 ">
+                        <a class="nav-link text-white p-0 fw-bold" href="#">Home</a>
+                    </li>
+                    <li class="nav-item px-3">
+                        <a class="nav-link text-white p-0 fw-bold" href="#">About</a>
+                    </li>
+                    <li class="nav-item dropdown px-3 fw-bold">
+                        <a class="nav-link dropdown text-white text-hover p-0" href="#" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Event
+                            <svg class="svg-arrow" xmlns="http://www.w3.org/2000/svg " width="14" height="12"
+                                viewBox="0 0 20 12" fill="none">
+                                <path
+                                    d="M19.5459 0.439551C19.2646 0.158344 18.8832 0.000370883 18.4854 0.000370848C18.0877 0.000370813 17.7062 0.158344 17.4249 0.439551L9.99993 7.86455L2.57493 0.43955C2.29202 0.166313 1.91312 0.0151208 1.51982 0.0185388C1.12653 0.0219557 0.75031 0.179709 0.472198 0.457821C0.194085 0.735933 0.036334 1.11215 0.032916 1.50545C0.029498 1.89874 0.18069 2.27765 0.453927 2.56055L8.93943 11.046C9.22072 11.3273 9.60218 11.4852 9.99993 11.4852C10.3977 11.4852 10.7791 11.3273 11.0604 11.046L19.5459 2.56055C19.8271 2.27926 19.9851 1.8978 19.9851 1.50005C19.9851 1.1023 19.8271 0.720842 19.5459 0.439551Z"
+                                    fill="white" />
+                            </svg>
+                        </a>
+                        <ul class="dropdown-menu bg-black ">
+                            <li><a class="dropdown-item text-white" href="#">• Jakarta</a></li>
+                            <li><a class="dropdown-item text-white" href="#">• Bogor</a></li>
+                            <li><a class="dropdown-item text-white" href="#">• Bekasi</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <button type="button" class="btn btn-light btn-bold">Contact</button>
+        </div>
+    </nav>
+
+    <section class="hero">
+        <div class="container hero-style">
+            <div class="title text-center">
+                <span class="">Penasaran? Temukan Event <br> Seru di Sini!</span>
+            </div>
+            <div class="subtitle-hero text-center">
+                <span class="fs-5 ">Eksplorasi Beragam Event yang Tak Terlupakan!</span>
+            </div>
+            <button class="btn btn-center my-2 rounded-pill p-1"><a class="font-btn-main" href="">Jelajahi
+                    Event</a>
+                <svg class="text-center" xmlns="http://www.w3.org/2000/svg" width="32" height="30" viewBox="0 0 44 42"
+                    fill="none">
+                    <path
+                        d="M7.38012 21C7.38012 13.104 13.9161 6.71997 22.0001 6.71997C30.0841 6.71997 36.6201 13.104 36.6201 21C36.6201 28.896 30.0841 35.28 22.0001 35.28C13.9161 35.28 7.38012 28.896 7.38012 21ZM34.9001 21C34.9001 14.028 29.1381 8.39997 22.0001 8.39997C14.8621 8.39997 9.10012 14.028 9.10012 21C9.10012 27.972 14.8621 33.6 22.0001 33.6C29.1381 33.6 34.9001 27.972 34.9001 21Z"
+                        fill="#352E35" />
+                    <path
+                        d="M20.538 27.9721L27.676 21.0001L20.538 14.0281L21.742 12.8521L30.084 21.0001L21.742 29.1481L20.538 27.9721Z"
+                        fill="#352E35" />
+                    <path d="M28.8799 20.16L28.8799 21.84L14.2599 21.84L14.2599 20.16L28.8799 20.16Z" fill="#352E35" />
+                </svg>
+            </button>
+        </div>
+    </section>
+
+
+
+    <section class="section2">
+        <img class="wave" src="icons/wave.png" alt="">
+        <div class="container">
+            <div class="section-event-unggulan">
+                <div class="left-section-event-unggulan">
+                    <div class="title">
+                        <span class="fw-bold font-black">Temukan Event Unggulan di Indonesia!</span>
+                    </div>
+                    <div class="description">
+                        Setiap event yang kami tampilkan telah dipilih dengan cermat untuk memberikan Anda pengalaman
+                        yang tak terlupakan. Jangan lewatkan kesempatan untuk berpartisipasi dalam <br> event-event ini
+                    </div>
+                    <button class="btn btn-center my-3 rounded p-1"><a class="font-btn-main" href="">Jelajahi
+                            Event</a>
+                        <svg class="text-center" xmlns="http://www.w3.org/2000/svg" width="32" height="30"
+                            viewBox="0 0 44 42" fill="none">
+                            <path
+                                d="M7.38012 21C7.38012 13.104 13.9161 6.71997 22.0001 6.71997C30.0841 6.71997 36.6201 13.104 36.6201 21C36.6201 28.896 30.0841 35.28 22.0001 35.28C13.9161 35.28 7.38012 28.896 7.38012 21ZM34.9001 21C34.9001 14.028 29.1381 8.39997 22.0001 8.39997C14.8621 8.39997 9.10012 14.028 9.10012 21C9.10012 27.972 14.8621 33.6 22.0001 33.6C29.1381 33.6 34.9001 27.972 34.9001 21Z"
+                                fill="#352E35" />
+                            <path
+                                d="M20.538 27.9721L27.676 21.0001L20.538 14.0281L21.742 12.8521L30.084 21.0001L21.742 29.1481L20.538 27.9721Z"
+                                fill="#352E35" />
+                            <path d="M28.8799 20.16git initL28.8799 21.84L14.2599 21.84L14.2599 20.16L28.8799 20.16Z"
+                                fill="#352E35" />
+                        </svg>
+                    </button>
+                </div>
+
+                <div class="right-section-event-unggulan">
+                    <div class="bg2 background-emoji container">
+                        <img src="icons/Asset 1emoji.png" alt="">
+                        <img src="icons/Asset 2@emoji.png" alt="">
+                        <img src="icons/Asset 3@emoji.png" alt="">
+                        <img src="icons/Asset 4emoji.png" alt="">
+                    </div>
+                    <img class="main-maskot-3d" src="icons/maskot-3d.png" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+    </div>
+
+</body>
+
+<script>
+    const navEl = document.querySelector('nav.navbar');
+
+    window.addEventListener('scroll', () => {
+        if (window.scrollY >= 90) {
+            navEl.classList.add('navbar-scrolled');
+        } else if (window.scrollY <= 10) {
+            navEl.classList.remove('navbar-scrolled');
+        }
+    });
+</script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+
+</html>

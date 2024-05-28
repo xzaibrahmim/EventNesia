@@ -1,0 +1,238 @@
+:root {
+  --bg--main: #f7cb46;
+  --bg--side: #f196e5;
+
+  --color--main: #fff;
+  --color-side: #352e35;
+
+  --btn-color: #ff7e00;
+ 
+}
+
+*{
+  text-decoration: none !important;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  height: 5000px;
+}
+
+section {
+  height: 93vh;
+}
+section.section2{
+  height: 200vh;
+  background: #f196e5;
+}
+/* =================== BG ABSOLUTE =================== */
+.bg{
+  padding: 7rem 0 2rem 0;
+  display: grid;
+  grid-template-columns: repeat(12,1fr);
+  grid-template-rows: repeat(6,1fr);
+  width: 100%;
+  height: 90vh;
+  position: absolute;
+}
+.bg img{
+  width: 8rem;
+  height: auto;
+}
+
+.bg img:nth-child(1){
+  grid-area: 1/2;
+  width: 7rem;
+}
+.bg img:nth-child(2){
+  grid-area: 1/9;
+  width: 5rem;
+}
+.bg img:nth-child(4){
+  grid-area: 5/2;
+  width: 9.5rem;
+}
+.bg img:nth-child(5){
+  grid-area: 5/11;
+  width: 6.8rem;
+}
+.bg img:nth-child(3){
+  grid-area: 2/12;
+  width: 6rem;
+}
+
+/* =================== SYTLE-NAV-CSS =================== */
+.btn-light {
+  background: #f196e5 !important;
+  border: 2px solid #352e35 !important;
+  border-radius: 12px !important;
+  font-weight: 800 !important;
+  padding: 0.5rem 1.8rem !important;
+  box-shadow: 0px 9px 4px 0px rgba(255, 255, 255, 0.25) inset,
+    0px 0px 8.7px 0px rgba(255, 255, 255, 0.25);
+}
+
+.navbar-dark {
+  color: var(--bs-white) !important;
+}
+
+a.navbar-brand {
+  font-weight: 700 !important;
+}
+
+a.nav-link:hover {
+  color: #ff7e00 !important;
+  border-bottom: 2px solid #ff7e00;
+}
+
+ul.dropdown-menu {
+  --bs-dropdown-min-width: 0rem;
+  --bs-dropdown-padding: null;
+  --bs-dropdown-link-hover-bg: var(--btn-color);
+}
+ul.dropdown-menu:hover {
+  color: #ff7e00;
+}
+
+svg.svg-arrow {
+  margin: 8px;
+}
+
+.navbar-scrolled {
+  background: #000000 !important;
+  backdrop-filter: blur(90) !important;
+}
+/* ==================z= STYLE-HERO ===================*/
+
+section.hero {
+  background: #f7cb46;
+}
+
+.hero-style{
+  display: flex;
+  height: 100vh;
+  gap: 8px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero .title span{
+  font-family: "Poppins", sans-serif;
+  font-size: 55px;
+  font-weight: 800;
+  color: #fff;
+  text-shadow: 2px 6px 5.5px rgba(0, 0, 0, 0.25);
+}
+
+a.font-btn-main{
+  font-size: 1rem;
+  padding: 0.5rem 0.6rem;
+  position: relative;
+  top: 2px;
+  font-family: "Montserrat", sans-serif;
+}
+
+.hero .subtitle-hero span{
+  font-weight: 600;
+  font-family: "Inter", sans-serif;
+}
+
+.btn:hover{
+  transition: all 150ms ease-in;
+  transform: scale(1.04);
+  background: var(--bs-btn-border-hover-color);
+}
+
+.btn{
+  transition: all 150ms ease-out;
+  box-shadow: 0px 10px 4px 0px rgba(0, 0, 0, 0.25), 0px 9px 4px 0px rgba(0, 0, 0, 0.25) inset;
+  background: var(--btn-color);
+  border: 3px solid var(--color-side);
+  --bs-btn-hover-border-color: 0;
+  --bs-btn-border-hover-color: #ff7e00;
+}
+
+.btn a.font-btn-main{
+  font-weight: 700;
+  color: var(--color-side);
+}
+
+/* =================== STYLE-WAVE ===================*/
+.font-black{
+  color: #000;
+}
+
+img.wave{
+  align-items: center;
+  object-position: center;
+  bottom: 4rem;
+  position: relative;
+  width: 100%;
+  height: 15vh;
+}
+
+/* =================== STYLE-SECTION2 ===================*/
+.bg2{
+  position: absolute;
+  display: grid;
+  width: auto;
+  height: 50vh;
+  grid-template-columns: repeat(5,1fr);
+  grid-template-rows: repeat(6,1fr);
+}
+
+.bg2 img{
+  width: 6rem;
+}
+
+.bg2 img:nth-child(1){
+  width: 9rem;
+  grid-area: 1/1;
+}
+.bg2 img:nth-child(2){
+  width: 6rem;
+  grid-area: 2/1;
+}
+.bg2 img:nth-child(3){
+  width: rem;
+  grid-area: 1/5;
+}
+.bg2 img:nth-child(4){
+  width: 10rem;
+  grid-area: 2/5;
+}
+
+.title span.font-black{
+  font-size: 3.4rem;
+}
+
+.section-event-unggulan{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.left-section-event-unggulan{
+  /* width: 45%; */
+}
+.description{
+  line-height: 28px;
+  font-weight: 500;
+}
+
+.right-section-event-unggulan{
+  /* width: 50%; */
+}
+
+img.main-maskot-3d {
+  width: 100%;
+}
+
+/* ================ MEDIA QUERY ================ */
+
+@media (max-width: 992px){
+  .section-event-unggulan{
+    flex-direction: column-reverse !important;
+  }
+}
