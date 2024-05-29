@@ -227,16 +227,15 @@ img.main-maskot-3d {
   align-items: center;
   gap: 2rem;
   padding: 3rem 0 9rem 0;
-  background: #f196e5;  
+  background: #f196e5;
 }
-
 
 .title-center span {
   color: #000;
   font-family: "Montserrat", sans-serif;
 }
 
-.card-body{
+.card-body {
   display: flex;
   gap: 2rem;
   justify-content: space-around;
@@ -260,10 +259,10 @@ img.main-maskot-3d {
   display: flex;
 }
 
-.right-card{
+.right-card {
   width: 100%;
 }
-.title-in-card span{
+.title-in-card span {
   color: #000;
   font-size: 3.3rem;
 }
@@ -279,44 +278,45 @@ img.main-maskot-3d {
   width: 19rem;
 }
 
-mg.wave:nth-child(2){
+mg.wave:nth-child(2) {
   bottom: 3rem;
 }
 /* ================== FOOTER ================= */
-footer{
+footer {
   height: 90vh;
   background: #000;
 }
 
-.subtext{
-  color: #D6D6D6;
+.subtext {
+  color: #d6d6d6;
 }
-button.btn-contact{
-  color: #352E35;
-  border: 1px solid #352E35;
+button.btn-contact {
+  color: #352e35;
+  border: 1px solid #352e35;
   border-radius: 12px;
-  box-shadow: 0px 12px 4px 0px rgba(0, 0, 0, 0.25), 0px 9px 4px 0px rgba(0, 0, 0, 0.25) inset;
+  box-shadow: 0px 12px 4px 0px rgba(0, 0, 0, 0.25),
+    0px 9px 4px 0px rgba(0, 0, 0, 0.25) inset;
 }
 
-.title span.footer{
-  color: #CECECE;
+.title span.footer {
+  color: #cecece;
 }
-.center-space2{
+.center-space2 {
   gap: 3rem;
   row-gap: 1rem;
   padding-right: 4rem;
 }
-.center-space2 ul a{
+.center-space2 ul a {
   color: white;
 }
-.center-space2 ul a:hover{
+.center-space2 ul a:hover {
   color: var(--btn-color);
 }
-.right-icons{
+.right-icons {
   gap: 2rem;
 }
 
-.space-contact2{
+.space-contact2 {
   justify-content: space-between;
   align-items: end;
   border-bottom: 2px solid #484848;
@@ -324,10 +324,61 @@ button.btn-contact{
   padding: 2rem 0;
 }
 
-.space-copyright3{
+.space-copyright3 {
   font-family: Inter;
 }
+
+/* ================ REKOMENDASI EVENT ================ */
+.carousel-item img {
+  object-fit: cover;
+  object-position: center;
+}
+.carousel-item {
+  border-radius: 32px;
+  background: #fdf7e1;
+  border: 2px solid #000;
+  border-bottom: 8px solid #000;
+}
+
+/* ----------- card ----------- */
+.content-right-card {
+  height: 50;
+}
+
+.img-card-left {
+  width: 50%;
+  height: auto;
+}
+
+.carousel-item {
+  height: 544px;
+}
+
+.content-right-card {
+  flex-direction: column;
+  width: 50%;
+  gap: 1rem;
+  height: auto;
+  padding: 2rem;
+  justify-content: start;
+}
+
+.overflow-scroll {
+  background: #fdf7e1;
+  height: 25%;
+  font-size: 1.2rem;
+  z-index: 99;
+}
+
 /* ================ MEDIA QUERY ================ */
+@media (max-width: 1200px) {
+  .overflow-scroll{
+    height: 17%;
+  }
+  .carousel-item {
+    height: 457px;
+  }
+}
 
 @media (max-width: 992px) {
   .section-event-unggulan {
@@ -336,10 +387,46 @@ button.btn-contact{
   .card-body {
     flex-direction: column;
   }
-  .space-contact2{
+  .space-contact2 {
     flex-direction: column;
     row-gap: 2.7rem;
     align-items: start;
     margin: 1rem 0 1.2rem 0;
+  }
+  
+  .overflow-scroll{
+    height: 13%;
+    font-size: 0.8rem;
+  }
+  .carousel-item {
+    height: 342px;
+  }
+ .fs-1{
+  font-size: 2rem !important;
+ }
+ .content-right-card{
+  gap: 0.4rem;
+ }
+}
+
+@media (max-width: 768px) {
+  .card-event-carousel{
+    flex-direction: column !important;
+  }
+
+}
+
+@media (max-width: 576px) {
+  .carousel-item{
+    height: auto;
+  }
+  .img-card-left{
+    width: 100%;
+  }
+  .content-right-card{
+    width: 100%;
+  }
+  .overflow-scroll{
+    display: none;
   }
 }
