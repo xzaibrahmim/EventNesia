@@ -1,0 +1,46 @@
+/* ============== SYTLE EVENT PRODUCT ============= */
+section{
+    width: 100%;
+    height: auto;
+}
+
+.event-product{
+    background: #f7cb46;
+    padding: 5rem 0;
+}
+
+/* -------CARDS------ */
+.card-body{
+    display: block;
+}
+
+.row{
+    padding: 1rem 0 1rem 0;
+}
+
+.card{
+    border: 2px solid #000;
+    border-bottom: 6px solid #000;
+}
+img.card-img-top{
+    border-bottom: 4px solid #000;
+    border-radius: 16px;
+}
+.card-body a{
+    font-family: Montserrat;
+}
+
+.title {
+    font-family: Montserrat;
+}
+
+.card-text{
+    font-size: 1rem;
+}
+.font-btn{
+    font-size: 14px;
+}
+.card-event{
+    justify-content: center;
+    margin: 0.6rem 0;
+}

@@ -354,6 +354,13 @@ button.btn-contact {
   height: 544px;
 }
 
+.carousel-control-next,
+.carousel-control-prev {
+  opacity: 10 !important;
+  color: #000 !important;
+  width: 5% !important;
+}
+
 .content-right-card {
   flex-direction: column;
   width: 50%;
@@ -372,7 +379,7 @@ button.btn-contact {
 
 /* ================ MEDIA QUERY ================ */
 @media (max-width: 1200px) {
-  .overflow-scroll{
+  .overflow-scroll {
     height: 17%;
   }
   .carousel-item {
@@ -393,40 +400,48 @@ button.btn-contact {
     align-items: start;
     margin: 1rem 0 1.2rem 0;
   }
-  
-  .overflow-scroll{
+
+  .overflow-scroll {
     height: 13%;
     font-size: 0.8rem;
   }
   .carousel-item {
     height: 342px;
   }
- .fs-1{
-  font-size: 2rem !important;
- }
- .content-right-card{
-  gap: 0.4rem;
- }
+  .fs-1 {
+    font-size: 2rem !important;
+  }
+  .content-right-card {
+    gap: 0.4rem;
+  }
 }
 
 @media (max-width: 768px) {
-  .card-event-carousel{
+  .card-event-carousel {
     flex-direction: column !important;
   }
-
 }
 
 @media (max-width: 576px) {
-  .carousel-item{
+  .carousel-item {
     height: auto;
   }
-  .img-card-left{
+  .img-card-left {
     width: 100%;
   }
-  .content-right-card{
+  .content-right-card {
     width: 100%;
   }
-  .overflow-scroll{
+  .overflow-scroll {
     display: none;
+  }
+  .center-space2 {
+    padding-right: 0;
+  }
+  .center-space2 {
+    padding-right: 0;
+  }
+  .event-product {
+    background: #000; 
   }
 }
