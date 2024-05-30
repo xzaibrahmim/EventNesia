@@ -535,4 +535,7 @@ button.btn-contact {
     width: 22px;
     height: 22px;
   }
+  .bg img:nth-child(3) {
+    display: none;
+  }
 }
