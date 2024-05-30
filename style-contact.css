@@ -1,0 +1,53 @@
+section{
+    width: 100%;
+    height: auto;
+}
+
+.contact{
+    background: #f7cb46;
+    padding: 6rem 0 1.2rem 0;
+}
+
+.grid{
+    height: auto;
+    display: grid;
+    gap: 1.2rem;
+    grid-template-columns: repeat(2,1fr);
+}
+
+.grid2{
+    display: grid;
+    row-gap: 1.2rem;
+    grid-template-rows: repeat(2,1fr);
+}
+
+.card{
+    background: #FDF7E1;
+    border: 2px solid;
+    border-bottom: 6px solid;
+}
+
+.card-body.card-style-contact-left{
+    align-items: start;
+    gap: 0.2rem;
+}
+
+svg.icons-contact{
+    padding-right: 1rem;
+}
+.card-body {
+    flex-direction: column;
+}
+
+form input.form-control{
+    border-radius: 10px;
+    border: 2px solid;
+    border-bottom: 4px solid;
+} 
+form textarea.pesan{
+   height: 10rem;
+   border-radius: 10px;
+   border: 2px solid;
+   border-bottom: 4px solid;
+   resize: none;
+} 

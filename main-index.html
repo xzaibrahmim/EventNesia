@@ -21,7 +21,7 @@
         href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
         rel="stylesheet">
     <!-- --------------------------------------- -->
-    <title>coba sass</title>
+    <title>Home</title>
 </head>
 
 <body id="Home">
@@ -45,7 +45,10 @@
                         <a class="nav-link text-white p-0 fw-bold" href="#">Home</a>
                     </li>
                     <li class="nav-item px-3">
-                        <a class="nav-link text-white p-0 fw-bold" href="#">About</a>
+                        <a class="nav-link text-white p-0 fw-bold" href="page-about.html">About</a>
+                    </li>
+                    <li class="nav-item px-3">
+                        <a class="nav-link text-white p-0 fw-bold" href="page-contact.html">Contact</a>
                     </li>
                     <li class="nav-item dropdown px-3 fw-bold">
                         <a class="nav-link dropdown text-white text-hover p-0" href="#" role="button"
@@ -66,8 +69,37 @@
                     </li>
                 </ul>
             </div>
-            <button type="button" class="btn btn-light btn-bold">Contact</button>
+            <button type="button" class="btn btn-light btn-bold btn-l" data-bs-toggle="modal" data-bs-target="#exampleModal"
+                data-bs-whatever="EventNesia">Log-in</button>
+
+            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <span class="modal-title fs-5" id="exampleModalLabel">Login to</span>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <form>
+                                <div class="mb-3">
+                                    <label for="recipient-name" class="col-form-label">Email</label>
+                                    <input type="email" class="form-control" id="email" >
+                                </div>
+                                <div>
+                                    <label for=" message-text" class="col-form-label">Password</label>
+                                    <input type="password" class="form-control my-3" id="password"></input>
+                                </div>
+                            </form>
+                        </div>
+                        <div class=" modal-footer">
+                            <button type="button" class="btn btn-primary">Login now</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
+
     </nav>
 
     <section id="hero" class="hero">
@@ -78,7 +110,7 @@
             <div class="subtitle-hero text-center">
                 <span class="fs-5 ">Eksplorasi Beragam Event yang Tak Terlupakan!</span>
             </div>
-            <button class="btn btn-center my-2 rounded-pill p-1"><a class="font-btn-main" href="">Jelajahi
+            <button class="btn btn-center my-2 rounded-pill p-1"><a class="font-btn-main" href="page-event.html">Jelajahi
                     Event</a>
                 <svg class="text-center" xmlns="http://www.w3.org/2000/svg" width="32" height="30" viewBox="0 0 44 42"
                     fill="none">
@@ -108,7 +140,7 @@
                         Setiap event yang kami tampilkan telah dipilih dengan cermat untuk memberikan Anda pengalaman
                         yang tak terlupakan. Jangan lewatkan kesempatan untuk berpartisipasi dalam <br> event-event ini
                     </div>
-                    <button class="btn btn-center my-3 rounded p-1"><a class="font-btn-main" href="">Jelajahi
+                    <button class="btn btn-center my-3 rounded p-1"><a class="font-btn-main" href="page-event.html">Jelajahi
                             Event</a>
                         <svg class="text-center" xmlns="http://www.w3.org/2000/svg" width="34" height="32"
                             viewBox="0 0 44 42" fill="none">
@@ -202,7 +234,7 @@
                                 <div class="content-right-card d-flex">
                                     <span class="fs-1 fw-bold text-black">POP UP FESTIVAL
                                         MOM & KIDS.</span>
-                                        <a id="toggle-link" href="#">View more</a>
+                                    <a id="toggle-link" href="#">View more</a>
                                     <div class="overflow-scroll">Another Pop Up is coming! 🤩    is coming to
                                         Aloha PIK
                                         2 and bringing a day filled with fun. There's something for everyone to
@@ -378,7 +410,7 @@
                                 <span class="fs-3 fw-5">Menjadi platform nomor satu yang menghubungkan masyarakat dengan
                                     berbagai event inspiratif dan menarik di Indonesia.</span>
                             </div>
-                            <button class="btn btn-center my-3 rounded p-1"><a class="font-btn-main" href="">View
+                            <button class="btn btn-center my-3 rounded p-1"><a class="font-btn-main" href="page-about.html">View
                                     More</a>
                                 <svg class="text-center" xmlns="http://www.w3.org/2000/svg" width="34" height="32"
                                     viewBox="0 0 44 42" fill="none">
@@ -466,6 +498,7 @@
             </div>
         </div>
     </footer>
+
 
 </body>
 

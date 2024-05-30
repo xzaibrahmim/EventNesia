@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="style-contact.css">
+    <link rel="stylesheet" href="main-style.css">
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <title>Document</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg bg-black navbar-dark p-3 fixed-top">
+        <div class="container">
+            <a class="navbar-brand fs-4" href="main-index.html">EventNesia</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item px-3 ">
+                        <a class="nav-link text-white p-0 fw-bold" href="#">Home</a>
+                    </li>
+                    <li class="nav-item px-3">
+                        <a class="nav-link text-white p-0 fw-bold" href="page-about.html">About</a>
+                    </li>
+                    <li class="nav-item px-3">
+                        <a class="nav-link text-white p-0 fw-bold" href="page-contact.html">Contact</a>
+                    </li>
+                    <li class="nav-item dropdown px-3 fw-bold">
+                        <a class="nav-link dropdown text-white text-hover p-0" href="#" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Event
+                            <svg class="svg-arrow" xmlns="http://www.w3.org/2000/svg " width="14" height="12"
+                                viewBox="0 0 20 12" fill="none">
+                                <path
+                                    d="M19.5459 0.439551C19.2646 0.158344 18.8832 0.000370883 18.4854 0.000370848C18.0877 0.000370813 17.7062 0.158344 17.4249 0.439551L9.99993 7.86455L2.57493 0.43955C2.29202 0.166313 1.91312 0.0151208 1.51982 0.0185388C1.12653 0.0219557 0.75031 0.179709 0.472198 0.457821C0.194085 0.735933 0.036334 1.11215 0.032916 1.50545C0.029498 1.89874 0.18069 2.27765 0.453927 2.56055L8.93943 11.046C9.22072 11.3273 9.60218 11.4852 9.99993 11.4852C10.3977 11.4852 10.7791 11.3273 11.0604 11.046L19.5459 2.56055C19.8271 2.27926 19.9851 1.8978 19.9851 1.50005C19.9851 1.1023 19.8271 0.720842 19.5459 0.439551Z"
+                                    fill="white" />
+                            </svg>
+                        </a>
+                        <ul class="dropdown-menu bg-black ">
+                            <li><a class="dropdown-item text-white" href="page-event.html">• Jakarta</a></li>
+                            <li><a class="dropdown-item text-white" href="page-event.html">• Bogor</a></li>
+                            <li><a class="dropdown-item text-white" href="page-event.html">• Bekasi</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <button type="button" class="btn btn-light btn-bold btn-l" data-bs-toggle="modal"
+                data-bs-target="#exampleModal" data-bs-whatever="EventNesia">Log-in</button>
+
+            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <span class="modal-title fs-5" id="exampleModalLabel">Login to</span>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <form>
+                                <div class="mb-3">
+                                    <label for="recipient-name" class="col-form-label">Email</label>
+                                    <input type="email" class="form-control" id="email">
+                                </div>
+                                <div>
+                                    <label for=" message-text" class="col-form-label">Password</label>
+                                    <input type="password" class="form-control my-3" id="password"></input>
+                                </div>
+                            </form>
+                        </div>
+                        <div class=" modal-footer">
+                            <button type="button" class="btn btn-primary">Login now</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </nav>
+
+    <section class="contact">
+        <div class="container">
+            <div class="grid">
+                <div class="grid2">
+                    <div class="card ">
+                        <div class="card-body card-style-contact-left">
+                            <p class="fs-3 fw-bold">Contact Information</p>
+                            <p class="fw-5"> hubungi kami lebih lanjut
+                                untuk poster event anda
+                                dan beberapa informasi
+                                event anda</p>
+                            <span><svg class="icons-contact" xmlns="http://www.w3.org/2000/svg" width="36" height="36"
+                                    viewBox="0 0 46 46" fill="none">
+                                    <path
+                                        d="M38.3335 7.66663H7.66683C5.5585 7.66663 3.85266 9.39163 3.85266 11.5L3.8335 34.5C3.8335 36.6083 5.5585 38.3333 7.66683 38.3333H38.3335C40.4418 38.3333 42.1668 36.6083 42.1668 34.5V11.5C42.1668 9.39163 40.4418 7.66663 38.3335 7.66663ZM38.3335 15.3333L23.0002 24.9166L7.66683 15.3333V11.5L23.0002 21.0833L38.3335 11.5V15.3333Z"
+                                        fill="black" />
+                                </svg>xzaabdulmalikibrahim@gmail.com</span>
+                            <span><svg class="icons-contact" xmlns="http://www.w3.org/2000/svg" width="38" height="38"
+                                    viewBox="0 0 44 44" fill="none">
+                                    <path
+                                        d="M12.1367 19.7817C14.7767 24.97 19.03 29.2233 24.2183 31.8633L28.2517 27.83C28.765 27.3167 29.48 27.17 30.1217 27.3717C32.175 28.05 34.375 28.4167 36.6667 28.4167C37.1529 28.4167 37.6192 28.6098 37.963 28.9536C38.3068 29.2975 38.5 29.7638 38.5 30.25V36.6667C38.5 37.1529 38.3068 37.6192 37.963 37.963C37.6192 38.3068 37.1529 38.5 36.6667 38.5C28.4008 38.5 20.4734 35.2164 14.6285 29.3715C8.78362 23.5266 5.5 15.5992 5.5 7.33333C5.5 6.8471 5.69315 6.38079 6.03697 6.03697C6.38079 5.69315 6.8471 5.5 7.33333 5.5H13.75C14.2362 5.5 14.7025 5.69315 15.0464 6.03697C15.3902 6.38079 15.5833 6.8471 15.5833 7.33333C15.5833 9.625 15.95 11.825 16.6283 13.8783C16.83 14.52 16.6833 15.235 16.17 15.7483L12.1367 19.7817Z"
+                                        fill="black" />
+                                </svg>+62 81915237248</span>
+                        </div>
+                    </div>
+                    <div class="card card-style-contact-left">
+                        <div class="card-body ">
+                            <span class="fs-1 fw-bold">Thank you :)</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="card card-style-contact-right">
+                    <div class="card-body card-right-contact">
+                        <span class="fs-3 fw-bold">Contact us</span>
+                        <form>
+                            <div class="mb-3">
+                                <label for="exampleInputEmail1" class="form-label">Name</label>
+                                <input type="text" class="form-control" id="exampleInputEmail1"
+                                    aria-describedby="emailHelp">
+                                <div id="emailHelp" class="form-text">We'll never share your email with anyone else.
+                                </div>
+                            </div>
+                            <div class="mb-3">
+                                <label for="exampleInputPassword1" class="form-label">Email</label>
+                                <input type="email" class="form-control" id="exampleInputPassword1">
+                            </div>
+                            <div class="mb-3">
+                                <label for="exampleInputPassword1" class="form-label">Phone</label>
+                                <input type="text" class="form-control" id="exampleInputPassword1">
+                            </div>
+                            <label for="exampleInputPassword1" class="form-label">Massage</label>
+                            <div class="form-floating">
+                                <textarea class="form-control pesan" placeholder="Leave a comment here"
+                                    id="floatingTextarea"></textarea>
+                            </div>
+
+                            <button class="btn btn-center my-3 rounded p-1"><a class="font-btn-main" href="">Send
+                                    Now</a>
+                            </button>
+                        </form>
+
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+
+
+    </section>
+</body>
+
+</html>

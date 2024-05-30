@@ -1,0 +1,26 @@
+.about{
+    background: #f7cb46;
+}
+
+.card{
+    background: #FDF7E1;
+    border-radius: 32px;
+}
+.card-body{
+    flex-direction: column;
+    padding: 3rem 2rem;
+    border: 2px solid #000;
+    border-radius: 32px;
+    border-bottom: 6px solid #000;
+}
+
+
+p.text-content{
+    color: #352E35;
+    font-weight: 500;
+    font-size: 2rem;
+}
+
+span.title{
+    font-size: 3rem;
+}

@@ -21,6 +21,26 @@ section.section {
   background: #f196e5;
 }
 
+/* -------> MODAL BOX <------- */
+.modal-backdrop.show {
+  z-index: 0;
+}
+.modal-content {
+  background: #fdf7e1;
+  color: #000;
+  border: 2px solid;
+  border-bottom: 4px solid;
+}
+.modal-footer {
+  justify-content: start;
+}
+
+input.form-control {
+  border-radius: 10px;
+  border: 2px solid;
+  border-bottom: 4px solid;
+}
+
 /* =================== BG ABSOLUTE =================== */
 .bg {
   padding: 7rem 0 2rem 0;
@@ -420,9 +440,42 @@ button.btn-contact {
   .card-event-carousel {
     flex-direction: column !important;
   }
+  .grid {
+    grid-template-columns: repeat(1, 1fr);
+  }
 }
 
 @media (max-width: 576px) {
+  .hero .title span {
+    font-size: 38px;
+  }
+  span.fs-5 {
+    font-size: 1rem;
+  }
+  /* bg img */
+  .bg img:nth-child(1) {
+    grid-area: 1/2;
+    width: 4rem;
+  }
+  .bg img:nth-child(2) {
+    grid-area: 1/9;
+    width: 4rem;
+  }
+  .bg img:nth-child(4) {
+    grid-area: 5/2;
+    width: 5.5rem;
+  }
+  .bg img:nth-child(5) {
+    grid-area: 5/12;
+    width: 5.8rem;
+  }
+  .bg img:nth-child(3) {
+    grid-area: 2/12;
+    width: 4rem;
+    position: relative;
+    left: 2rem;
+  }
+
   .carousel-item {
     height: auto;
   }
@@ -442,6 +495,44 @@ button.btn-contact {
     padding-right: 0;
   }
   .event-product {
-    background: #000; 
+    background: #000;
+  }
+  .dua {
+    margin-bottom: 3rem;
+  }
+  .bg img {
+    width: 1rem;
+    height: auto;
+  }
+}
+
+@media (max-width: 358px) {
+  .btn-login {
+    display: none;
+  }
+  .center-space2 {
+    flex-direction: column;
+  }
+  footer {
+    height: auto;
+  }
+  .title span.font-black {
+    font-size: 2rem;
+  }
+  .right-section-event-unggulan .bg2 img {
+    width: 5rem;
+  }
+  .card-body .visi {
+    width: 12rem;
+  }
+  .space-copyrigt3 span {
+    font-size: 10px;
+  }
+  .right-icons{
+    gap: 1.3rem;
+  }
+  .right-icons a svg{
+    width: 22px;
+    height: 22px;
   }
 }
