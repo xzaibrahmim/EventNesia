@@ -28,7 +28,7 @@
 <body>
     <nav class="navbar navbar-expand-lg bg-black navbar-dark p-3 fixed-top">
         <div class="container">
-            <a class="navbar-brand fs-4" href="#">EventNesia</a>
+            <a class="navbar-brand fs-4" href="index.html">EventNesia</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -36,13 +36,13 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item px-3 ">
-                        <a class="nav-link text-white p-0 fw-bold" href="main-index.html">Home</a>
+                        <a class="nav-link text-white p-0 fw-bold" href="index.html">Home</a>
                     </li>
                     <li class="nav-item px-3">
                         <a class="nav-link text-white p-0 fw-bold" href="page-about.html">About</a>
                     </li>
                     <li class="nav-item px-3">
-                        <a class="nav-link text-white p-0 fw-bold" href="">Contact</a>
+                        <a class="nav-link text-white p-0 fw-bold" href="page-contact.html">Contact</a>
                     </li>
                     <li class="nav-item dropdown px-3 fw-bold">
                         <a class="nav-link dropdown text-white text-hover p-0" href="#" role="button"
@@ -56,15 +56,44 @@
                             </svg>
                         </a>
                         <ul class="dropdown-menu bg-black ">
-                            <li><a class="dropdown-item text-white" href="# hjb by']by nyhu">• Jakarta</a></li>
-                            <li><a class="dropdown-item text-white" href="#">• Bogor</a></li>
-                            <li><a class="dropdown-item text-white" href="#">• Bekasi</a></li>
+                            <li><a class="dropdown-item text-white" href="page-event.html">• Jakarta</a></li>
+                            <li><a class="dropdown-item text-white" href="page-event.html">• Bogor</a></li>
+                            <li><a class="dropdown-item text-white" href="page-event.html">• Bekasi</a></li>
                         </ul>
                     </li>
                 </ul>
             </div>
-            <button type="button" class="btn btn-light btn-bold">Log-in</button>
+            <button type="button" class="btn btn-light btn-bold btn-l" data-bs-toggle="modal"
+                data-bs-target="#exampleModal" data-bs-whatever="EventNesia">Log-in</button>
+
+            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <span class="modal-title fs-5" id="exampleModalLabel">Login to</span>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <form>
+                                <div class="mb-3">
+                                    <label for="recipient-name" class="col-form-label">Email</label>
+                                    <input type="email" class="form-control" id="email">
+                                </div>
+                                <div>
+                                    <label for=" message-text" class="col-form-label">Password</label>
+                                    <input type="password" class="form-control my-3" id="password"></input>
+                                </div>
+                            </form>
+                        </div>
+                        <div class=" modal-footer">
+                            <button type="button" class="btn btn-primary">Login now</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
+
     </nav>
 
     <section id="event-product" class="event-product">
