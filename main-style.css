@@ -443,6 +443,11 @@ button.btn-contact {
   .grid {
     grid-template-columns: repeat(1, 1fr);
   }
+  span.text-contact{
+    font-size: 0.8rem;
+    font-weight: 600;
+  }
+
 }
 
 @media (max-width: 576px) {
@@ -504,9 +509,18 @@ button.btn-contact {
     width: 1rem;
     height: auto;
   }
+  .grid-contact {
+    grid-template-columns: repeat(1, 1fr) !important;
+  }
+  span.text-contact{
+    font-size: 1rem;
+  }
 }
 
 @media (max-width: 358px) {
+  span.text-contact{
+    font-size: 0.8em;
+  }
   .btn-login {
     display: none;
   }
@@ -528,14 +542,18 @@ button.btn-contact {
   .space-copyrigt3 span {
     font-size: 10px;
   }
-  .right-icons{
+  .right-icons {
     gap: 1.3rem;
   }
-  .right-icons a svg{
+  .right-icons a svg {
     width: 22px;
     height: 22px;
   }
   .bg img:nth-child(3) {
     display: none;
   }
+  .grid {
+    grid-template-columns: repeat(1, 1fr);
+  }
 }
+
